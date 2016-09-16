@@ -20,8 +20,3 @@ export function reducer(state = 0, action) {
             return state
     }
 };
-
-/*
-function valNum1(state = initialState, action){
-    return state;
-};*/

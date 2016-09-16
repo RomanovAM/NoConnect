@@ -23231,7 +23231,7 @@
 	'use strict';
 
 	Object.defineProperty(exports, "__esModule", {
-	    value: true
+	  value: true
 	});
 	exports.store = undefined;
 
@@ -23240,32 +23240,6 @@
 	var _reducers = __webpack_require__(202);
 
 	var store = exports.store = (0, _redux.createStore)(_reducers.reducer);
-
-	/*
-	store.subscribe(()=>{
-	    console.log(store.getState());
-	    console.log(store);
-	});
-	*/
-	store.subscribe(function () {
-	    var a = store.getState();
-	    console.log(a);
-	});
-	/*
-	app: {
-
-	    inputNum1: {
-	        value: 5,
-	    },
-
-	    inputNum2: {
-	        value: 7,
-	    },
-
-	    result: {
-	        value: 0,
-	    }
-	}*/
 
 /***/ },
 /* 202 */
@@ -23303,11 +23277,6 @@
 	            return state;
 	    }
 	};
-
-	/*
-	function valNum1(state = initialState, action){
-	    return state;
-	};*/
 
 /***/ },
 /* 203 */
