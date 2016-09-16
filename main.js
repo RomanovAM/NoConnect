@@ -1,21 +1,23 @@
-import 'babel-polyfill';
-import {INCREMENT, DECREMENT, ADD, SUB, CLS, add, sub} from './actions';
+import  ReactDOM  from 'react-dom';
 import { Provider } from 'react-redux'
 import {store} from './store';
 import {App} from './container';
-import {Component} from 'react';
 import React from 'react';
-import  ReactDOM  from 'react-dom';
 import {connect} from 'react-redux';
-
-/********************************************************************/
-
+import {INCREMENT, DECREMENT, ADD, SUB, CLS, add, sub} from './actions';
 
 /*++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
 
+function mapStateToProps (state) {
+    return {
+        result: state
+    }
+};
+
+const Containerr = connect(mapStateToProps)(App);
 
 ReactDOM.render(
     <Provider store={store}>
-        <App/>
+        <Containerr/>
     </Provider>,
     document.getElementById('root'));

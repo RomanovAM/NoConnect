@@ -14,3 +14,11 @@ export function add(num1 = 0, num2 = 0) {
 export function sub(num1 = 0, num2 = 0) {
   return { type: SUB, num1, num2 }
 };
+
+export function increment() {
+  return { type: INCREMENT }
+};
+
+export function decrement() {
+  return { type: DECREMENT }
+};

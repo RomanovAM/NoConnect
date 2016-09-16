@@ -1,10 +1,10 @@
 import {INCREMENT, DECREMENT, ADD, SUB, CLS, add, sub} from './actions';
 
-export function counter(state = 0, action) {
+export function reducer(state = 0, action) {
     let actionType = action.type,
         a= action.num1,
         b= action.num2;
-    
+
     switch (action.type) {
         case INCREMENT:
             return state + 1
